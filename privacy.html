@@ -1,48 +1,94 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ARM Rubik Cube – Gizlilik Politikası</title>
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="ARM Rubik Cube privacy policy: guest play, optional player accounts, gameplay data, camera use, account transfer, and data deletion.">
+  <title>ARM Rubik Cube | Privacy Policy / Gizlilik Politikası</title>
   <style>
-    body {
-      max-width: 720px;
-      margin: 48px auto;
-      padding: 0 20px;
-      font: 16px/1.65 system-ui, sans-serif;
-      color: #202124;
-    }
+    :root {color-scheme: light dark; --ink:#20233a; --muted:#586077; --line:#deddf0; --panel:#f7f5ff; --accent:#643dd4; --bg:#fff;}
+    * {box-sizing:border-box;}
+    html {scroll-behavior:smooth;}
+    body {max-width:840px; margin:0 auto; padding:28px clamp(18px,5vw,45px) 64px; background:var(--bg); color:var(--ink); font:16px/1.72 system-ui,-apple-system,"Segoe UI",sans-serif;}
+    header {padding-bottom:16px; border-bottom:2px solid var(--line);}
+    h1 {font-size:clamp(1.65rem,4vw,2.2rem); line-height:1.2; margin:8px 0 12px;}
+    h2 {font-size:1.18rem; margin:28px 0 8px; line-height:1.35;}
+    p,li {margin:9px 0;}
+    .muted,small {color:var(--muted);}
+    .langs {display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;}
+    a {color:var(--accent); overflow-wrap:anywhere;}
+    .langs a {display:inline-block;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 16px;text-decoration:none;font-weight:600;}
+    .summary {background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 18px;margin-top:20px;}
+    section.language {padding-top:8px;}
+    .language + .language {border-top:2px solid var(--line);margin-top:48px;padding-top:22px;}
+    footer {border-top:1px solid var(--line);padding-top:20px;margin-top:34px;}
+    @media (prefers-color-scheme:dark){:root {--ink:#ecedfc;--muted:#c1c1d8;--line:#413c64;--panel:#24203c;--accent:#b7a4ff;--bg:#131323;}}
   </style>
 </head>
 <body>
-  <main>
-    <h1>ARM Rubik Cube Gizlilik Politikası</h1>
-    <p>Geliştirici: Armağan Cebiroğlu</p>
-    <p><a href="#hesap-silme">Hesap ve veri silme</a></p>
+<main>
+  <header>
+    <h1>ARM Rubik Cube — Privacy Policy / Gizlilik Politikası</h1>
+    <p class="muted">Developer / Geliştirici: Armağan Cebiroğlu<br>Last updated / Son güncelleme: 23 November 2026 / 23 Kasım 2026</p>
+    <nav class="langs" aria-label="Select language"><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
+  </header>
 
-    <h2>Uygulamanın kullandığı veriler</h2>
-    <p>Profiline isteğe bağlı olarak ad veya rumuz ekleyebilirsin.
-       Uygulama, oyun sonuçlarını kaydetmek için çözüm sürelerini ve
-       skorları işler. Bu kayıtlar Supabase altyapısında saklanır.</p>
-    <p>Uygulama profil için e-posta adresi veya fotoğraf toplamaz.
-       Uygulamada reklam gösterilmez.</p>
+  <section class="language" id="en" lang="en">
+    <h2>English</h2>
+    <div class="summary">ARM Rubik Cube can be played as a guest without creating an account. Saving game history and achievements to the cloud is optional and starts only after a player account is created.</div>
 
-    <h2>Kamera kullanımı</h2>
-    <p>Kamera, küpün renklerini okumak için kullanılır. Kamera görüntüleri
-       cihazında işlenir ve Supabase'e gönderilmez.</p>
+    <h2>1. Guest play and optional accounts</h2>
+    <p>You can play the cube puzzles and use the cube-solving camera without creating an account. Guest gameplay results are not submitted to our Supabase game-record database and are not saved as a persistent player history by the app.</p>
+    <p>If you choose <strong>Create Account</strong>, the app creates an anonymous account and assigns a system-generated Player Code. You do not need to provide an email address, phone number, real name, nickname, or profile photo.</p>
 
-    <h2 id="hesap-silme">Hesap ve veri silme</h2>
-    <p>Hesabını ve ilişkili verilerini silmek için uygulamadaki Profil
-       sayfasında yer alan hesap ve veri silme seçeneğini kullanabilirsin.</p>
-    <p>Uygulamaya erişemiyorsan hesap ve veri silme talebini e-postayla
-       iletebilirsin. Talebinde ARM Rubik Cube uygulamasını belirt.
-       Profilinde ad veya rumuz kullanıyorsan onu da yazabilirsin.</p>
-    <p><a href="mailto:armagancebiroglu@gmail.com?subject=ARM%20Rubik%20Cube%20hesap%20silme%20talebi">E-postayla silme talebi gönder</a></p>
+    <h2>2. Information processed for registered players</h2>
+    <p>To provide account access, saved results, player levels, achievements, and leaderboards, the app processes a system-generated Player Code, an anonymous authentication identifier, and gameplay records such as selected difficulty and start position, number of moves, calculated solution length, completion time when timing is enabled, and the date of a saved result.</p>
+    <p>Registered-player data is stored using Supabase services. Player codes and eligible performance results may appear in leaderboard features. A Player Code is a public game identifier, not a password or account recovery credential.</p>
 
-    <h2>İletişim</h2>
-    <p>Gizlilikle ilgili sorular için
-       <a href="mailto:armagancebiroglu@gmail.com">armagancebiroglu@gmail.com</a>
-       adresine yazabilirsin.</p>
-  </main>
+    <h2>3. Camera permissions</h2>
+    <p>The camera is used only when you choose to scan a physical Rubik's Cube. Camera images are analyzed on your device to identify sticker colors; the app does not upload camera images to Supabase as part of this feature. You may use the other game features without granting camera permission.</p>
+
+    <h2>4. Account transfer and recovery</h2>
+    <p>Registered players can use a time-limited transfer code or a recovery key to access an existing player account on another device. These codes are confidential and should not be shared. The service uses authentication and code-verification records necessary for account access and recovery.</p>
+
+    <h2>5. Data retention and account deletion</h2>
+    <p>Registered gameplay records are retained while the player account exists, unless deleted sooner. To request in-app deletion, go to <strong>Profile → Account &amp; Privacy → Delete my data</strong> and confirm your choice. This deletes the player profile and associated saved gameplay records; the deletion cannot be undone. The app then allows you to continue as a guest.</p>
+    <p>Account deletion is available from the app’s Account &amp; Privacy section. Technical authentication and service records may be handled separately according to applicable legal and service requirements.</p>
+
+    <h2>6. Ads, tracking, and contact</h2>
+    <p>The app does not display third-party advertisements and does not use gameplay data for advertising tracking. The app does not ask players to submit an email address for gameplay or account creation. If you email the developer, your message and email address will be used to respond to your request.</p>
+    <p>Privacy questions: <a href="mailto:armagancebiroglu@gmail.com">armagancebiroglu@gmail.com</a></p>
+  </section>
+
+  <section class="language" id="tr" lang="tr">
+    <h2>Türkçe</h2>
+    <div class="summary">ARM Rubik Cube, hesap oluşturmadan misafir olarak oynanabilir. Oyun geçmişinin ve başarıların bulutta saklanması isteğe bağlıdır; yalnızca oyuncu hesabı oluşturulduktan sonra başlar.</div>
+
+    <h2>1. Misafir oyunu ve isteğe bağlı hesap</h2>
+    <p>Hesap oluşturmadan küp bulmacalarını oynayabilir ve kamera ile küp çözme özelliğini kullanabilirsin. Misafir oyun sonuçları Supabase oyun kayıtları veritabanına gönderilmez ve uygulama tarafından kalıcı oyuncu geçmişi olarak saklanmaz.</p>
+    <p><strong>Create Account</strong> seçeneğini kullanırsan anonim bir oyuncu hesabı oluşturulur ve sistem sana bir Player Code (Oyuncu Kodu) verir. E-posta adresi, telefon numarası, gerçek ad, rumuz veya profil fotoğrafı istenmez.</p>
+
+    <h2>2. Kayıtlı oyuncular için işlenen veriler</h2>
+    <p>Hesaba erişim, oyun geçmişi, oyuncu seviyesi, başarılar ve sıralama özellikleri için sistem tarafından oluşturulan Oyuncu Kodu, anonim kimlik doğrulama tanımlayıcısı ve oyun sonuçları işlenir. Bunlar seçilen zorluk seviyesi ve başlangıç pozisyonu, hamle sayısı, hesaplanan çözüm uzunluğu, zamanlayıcı açıksa çözüm süresi ve kayıt tarihi gibi bilgileri kapsar.</p>
+    <p>Kayıtlı oyuncu verileri Supabase hizmetleriyle saklanır. Oyuncu Kodu ve uygun performans sonuçları sıralama ekranlarında gösterilebilir. Oyuncu Kodu herkese açık bir oyun tanımlayıcısıdır; parola veya hesap kurtarma bilgisi değildir.</p>
+
+    <h2>3. Kamera izni</h2>
+    <p>Kamera yalnızca fiziksel Rubik küpünü taramayı seçtiğinde kullanılır. Çıkartmaların renkleri cihazında analiz edilir; kamera görüntüleri bu özellik kapsamında Supabase'e yüklenmez. Diğer oyun özellikleri için kamera izni gerekmez.</p>
+
+    <h2>4. Hesap aktarımı ve kurtarma</h2>
+    <p>Kayıtlı oyuncular mevcut hesaplarına başka cihazdan erişmek için kısa süreli aktarım kodu veya kurtarma anahtarı kullanabilir. Bu kodlar gizlidir ve başkalarıyla paylaşılmamalıdır. Hesap erişimi ve kurtarma için gerekli kimlik doğrulama ve kod doğrulama kayıtları işlenir.</p>
+
+    <h2 id="hesap-silme">5. Veri saklama ve hesap silme</h2>
+    <p>Kayıtlı oyun sonuçları, daha önce silinmedikleri sürece oyuncu hesabı mevcut olduğu müddetçe saklanır. Uygulama içinden silmek için <strong>Profile → Account &amp; Privacy → Delete my data</strong> yolunu izle ve işlemi onayla. Bu işlem oyuncu profilini ve ilişkili kayıtlı oyun sonuçlarını siler; geri alınamaz. Ardından misafir olarak oynamaya devam edebilirsin.</p>
+    <p>Hesap silme işlemi uygulamanın Account &amp; Privacy bölümünden yapılır. Teknik kimlik doğrulama ve hizmet kayıtları, yürürlükteki yasal ve hizmet gerekliliklerine göre ayrıca işlenebilir.</p>
+
+    <h2>6. Reklam, takip ve iletişim</h2>
+    <p>Uygulamada üçüncü taraf reklam gösterilmez ve oyun verileri reklam amaçlı takip için kullanılmaz. Oyun oynamak veya hesap oluşturmak için e-posta adresi istenmez. Geliştiriciye e-posta gönderirsen mesajın ve e-posta adresin talebine yanıt vermek için kullanılır.</p>
+    <p>Gizlilikle ilgili sorular: <a href="mailto:armagancebiroglu@gmail.com">armagancebiroglu@gmail.com</a></p>
+  </section>
+
+  <footer><small>ARM Rubik Cube · Privacy Policy / Gizlilik Politikası</small></footer>
+</main>
 </body>
 </html>
